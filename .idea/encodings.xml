@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_common_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_entity" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_item_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_manager_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_mapper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_protocal_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_search_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ddbuy_sso_web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test_demo" charset="UTF-8" />
+  </component>
+</project>

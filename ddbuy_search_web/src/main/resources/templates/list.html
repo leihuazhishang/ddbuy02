@@ -1,0 +1,34 @@
+<!--名称空间-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+ddddd
+>>>显示所有搜索商品
+<div th:text="${navigationBar}"></div>
+<input type="text" th:value="${info.totalPage}">
+
+<ul class="cate_list">
+    <!--显示查询结果  开始-->
+
+        <li th:each="p : ${info.list}">
+            <div class="img"><a href="#">
+
+                <img src="images/default.jpg" width="210" height="185" />
+
+            </a></div>
+            <div class="price">
+                <font>￥<span th:text="${p.price}"></span></font> &nbsp;
+            </div>
+            <div class="name"><a href="#" th:text="${p.title}"></a></div>
+            <div class="carbg">
+                <a href="#" class="ss">收藏</a>
+                <a href="#" class="j_car">加入购物车</a>
+            </div>
+        </li>
+
+    <!--显示查询结果  结束-->
+</ul>
+</body>
+</html>

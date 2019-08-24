@@ -1,0 +1,29 @@
+一、项目架构
+ddbuy-parent  maven|或者springboot父工程选择类型为:pom    添加springboot依赖
+   ddbuy-entity  maven jar包
+   ddbuy-interface  接口  maven jar包
+   ddbuy-mapper   dao层   maven工程或者springboot工程  jar包(只是存放接口和持久化文件)
+
+   ddbuy-service   实现    springboot工程  jar    9001
+    注意:ddbuy-serivce工程需要整合mybatis
+
+   ddbuy-manage-web  后台  消费
+   ddbuy-protoal-web 前台  消费  首页
+
+二、工程之间的依赖关系
+ddbuy-interface  依赖 ddbuy-entity
+
+ddbuy-service  依赖 ddbuy-interface 和 ddbuy-mapper
+
+ddbuy-manage-web 依赖 ddbuy-interface
+
+
+三、项目的端口
+zookeeper的dubbo-admin的Tomcat端口:8082
+ddbuy-service   9001      运行前需开启 solr服务器
+ddbuy-manage-web   8081
+ddbuy-protocal-web 8084   运行前需开启:redis、zookeeper、fastdfs服务器
+ddbuy-search-web 8085  运行前需开启 solr服务器
+ddbuy-item-web 8086 商品详情页展示
+ddbuy-sso-web 8087
+四、问题收集
